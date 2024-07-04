@@ -26,3 +26,14 @@ export interface defaultRooms {
   child: number;
   price: number;
 }
+
+export interface CustomInputNumberProps {
+  min: number;
+  max: number;
+  step: number;
+  name: string;
+  value: string;
+  disabled?: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+}
