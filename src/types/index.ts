@@ -37,3 +37,9 @@ export interface CustomInputNumberProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
 }
+
+export interface RoomAllocationProps {
+  guest: People;
+  rooms: Room[];
+  onChange?: (roomAllocation: defaultRooms[]) => void;
+}
